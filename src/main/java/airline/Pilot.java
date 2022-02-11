@@ -7,5 +7,7 @@ public class Pilot extends Employee {
         this.licenceNumber = licenceNumber;
     }
 
-
+    public String getLicenceNumber() {
+        return licenceNumber;
+    }
 }
