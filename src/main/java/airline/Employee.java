@@ -12,6 +12,7 @@ public abstract class Employee {
         return name;
     }
 
-
-
+    public CrewRank getCrewRank() {
+        return crewRank;
+    }
 }
