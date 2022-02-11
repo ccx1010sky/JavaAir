@@ -22,7 +22,7 @@ public class Flight {
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
         ccMembers = new ArrayList<>(7);
-        passengers = new ArrayList<>(200);
+        passengers = new ArrayList<>(100);
     }
 
 
