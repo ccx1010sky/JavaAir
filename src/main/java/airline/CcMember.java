@@ -1,10 +1,9 @@
 package airline;
 
 public class CcMember extends Employee{
-    private String licenceNumber;
-    public CcMember(String name,CrewRank crewRank,String licenceNumber){
+
+    public CcMember(String name,CrewRank crewRank){
         super(name,crewRank);
-        this.licenceNumber = licenceNumber;
     }
 
 
