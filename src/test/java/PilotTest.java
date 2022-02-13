@@ -16,4 +16,8 @@ public class PilotTest {
     public void hasName(){
         assertEquals("Mike",pilot.getName());
     }
+    @Test
+    public  void hasLicenceNumber(){
+        assertEquals("CCA0001",pilot.getLicenceNumber());
+    }
 }
