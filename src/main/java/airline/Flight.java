@@ -21,6 +21,10 @@ public class Flight {
         passengers = new ArrayList<>();
     }
 
+    public int getPilotCount() {
+        return pilots.size();
+    }
+
     public int numberOfAvailableSeats(){
         return this.plane.getPlaneCapacity() - this.passengers.size();
     }
