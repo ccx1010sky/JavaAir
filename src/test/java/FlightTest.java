@@ -44,5 +44,14 @@ public class FlightTest {
         flight.addPilot(Jack);
         assertEquals(2,flight.getPilotCount());
     }
+    @Test
+    public void flightHasPassengers(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(3,flight.getPassengerCount());
+
+
+    }
 
 }
