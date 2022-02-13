@@ -9,6 +9,12 @@ public enum FlightInfo {
     String destination;
     String time;
     FlightInfo(String flightNumber,String departureAirport,String destination, String time){
+        this.fightNumber = flightNumber;
+        this.departureAirport = departureAirport;
+        this.destination = destination;
+        this.time = time;
+
+
 
     }
 }
