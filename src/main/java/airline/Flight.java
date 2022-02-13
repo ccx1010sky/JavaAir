@@ -5,7 +5,7 @@ import passenger.Passenger;
 import java.util.ArrayList;
 
 public class Flight {
-    private Pilot pilot;
+    ArrayList<Pilot> pilots;
     ArrayList<CcMember> ccMembers;
     ArrayList<Passenger> passengers;
     private PlaneType planeType;
