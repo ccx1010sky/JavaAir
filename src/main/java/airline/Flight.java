@@ -30,7 +30,11 @@ public class Flight {
     }
 
     public int numberOfAvailableSeats(){
-        return plane.getPlaneCapacity() -  passengers.size();
+        return this.plane.getPlaneCapacity() -  this.passengers.size();
+    }
+
+    public void addPilot(Pilot pilot){
+        this.pilots.add(pilot);
     }
 
 
