@@ -17,4 +17,7 @@ public class Plane {
     public int  getPlaneCapacity(){
         return this.planeType.getCapacity();
     }
+    public int getPlaneTotalWeight(){
+        return this.planeType.getTotalWeight();
+    }
 }
