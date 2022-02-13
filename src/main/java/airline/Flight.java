@@ -33,6 +33,10 @@ public class Flight {
         this.pilots.add(pilot);
     }
 
+    public void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
+    }
+
     public void clearPassenger(){
         this.passengers.clear();
     }
