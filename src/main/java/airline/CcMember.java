@@ -7,6 +7,8 @@ public class CcMember extends Employee{
 
     }
 
+
+
     public String relayMessage(String message){
         return  message;
     }

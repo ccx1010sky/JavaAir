@@ -16,6 +16,10 @@ public class CcMemberTest {
         public void hasName(){
             assertEquals("John",ccMember.getName());
         }
+        @Test
+        public  void hasCrewRank(){
+            assertEquals(CrewRank.FIRST_OFFICER,ccMember.getCrewRank());
+        }
 
 
 
