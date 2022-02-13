@@ -24,6 +24,9 @@ public class Flight {
     public int getPilotCount() {
         return pilots.size();
     }
+    public int getCcMemberCount() {
+        return ccMembers.size();
+    }
 
     public int numberOfAvailableSeats(){
         return this.plane.getPlaneCapacity() - this.passengers.size();
@@ -32,6 +35,9 @@ public class Flight {
     public void addPilot(Pilot pilot){
         this.pilots.add(pilot);
     }
+
+
+
 
     public int getPassengerCount(){
         return passengers.size();
