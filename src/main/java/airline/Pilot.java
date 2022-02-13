@@ -11,6 +11,10 @@ public class Pilot extends Employee {
         return licenceNumber;
     }
 
+    public void setLicenceNumber(String licenceNumber) {
+        this.licenceNumber = licenceNumber;
+    }
+
     public String flyPlane(){
         return "I am flying the plane";
     }
