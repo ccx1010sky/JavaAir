@@ -36,9 +36,9 @@ public class Flight {
         this.pilots.add(pilot);
     }
 
-
-
-
+    public void clearPassenger(){
+        this.passengers.clear();
+    }
     public int getPassengerCount(){
         return passengers.size();
     }
