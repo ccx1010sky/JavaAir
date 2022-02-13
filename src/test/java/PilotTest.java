@@ -20,6 +20,7 @@ public class PilotTest {
     }
     @Test
     public  void hasLicenceNumber(){
-        assertEquals("CCA0001",pilot.getLicenceNumber());
+        assertEquals("CCA0002",co_pilot.getLicenceNumber());
     }
+
 }
