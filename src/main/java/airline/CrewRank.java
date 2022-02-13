@@ -12,5 +12,16 @@ public enum CrewRank {
         this.numberOfCrew = numberOfCrew;
     }
 
+    public int getRank() {
+        return rank;
+    }
+
+    public int getNumberOfCrew() {
+        return numberOfCrew;
+    }
+
+    public void setNumberOfCrew(int numberOfCrew) {
+        this.numberOfCrew = numberOfCrew;
+
     }
 }
