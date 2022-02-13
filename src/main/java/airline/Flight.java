@@ -5,6 +5,7 @@ import passenger.Passenger;
 import java.util.ArrayList;
 
 public class Flight {
+    private Pilot pilot;
     ArrayList<Pilot> pilots;
     ArrayList<CcMember> ccMembers;
     ArrayList<Passenger> passengers;
@@ -21,6 +22,7 @@ public class Flight {
         this.destination = destination;
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
+        pilots = new ArrayList<>();
         ccMembers = new ArrayList<>(7);
         passengers = new ArrayList<>(100);
     }
