@@ -13,8 +13,21 @@ public enum FlightInfo {
         this.departureAirport = departureAirport;
         this.destination = destination;
         this.time = time;
+    }
 
+    public String getFightNumber() {
+        return fightNumber;
+    }
 
+    public String getDepartureAirport() {
+        return departureAirport;
+    }
 
+    public String getDestination() {
+        return destination;
+    }
+
+    public String getTime() {
+        return time;
     }
 }
