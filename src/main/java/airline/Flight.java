@@ -1,11 +1,13 @@
 package airline;
 
+
 import passenger.Passenger;
 
 import java.util.ArrayList;
 
 public class Flight {
     private Pilot pilot;
+    private Plane plane;
     ArrayList<Pilot> pilots;
     ArrayList<CcMember> ccMembers;
     ArrayList<Passenger> passengers;
@@ -25,6 +27,10 @@ public class Flight {
         pilots = new ArrayList<>();
         ccMembers = new ArrayList<>(7);
         passengers = new ArrayList<>(100);
+    }
+
+    public int numberOfAvailableSeats(){
+        return plane.getPlaneCapacity() -  passengers.size();
     }
 
 
