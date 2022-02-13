@@ -26,7 +26,7 @@ public class Flight {
         this.departureTime = departureTime;
         pilots = new ArrayList<>();
         ccMembers = new ArrayList<>(7);
-        passengers = new ArrayList<>(100);
+        passengers = new ArrayList<>();
     }
 
     public int numberOfAvailableSeats(){
@@ -35,6 +35,10 @@ public class Flight {
 
     public void addPilot(Pilot pilot){
         this.pilots.add(pilot);
+    }
+
+    public int getPassengerCount(){
+        return passengers.size();
     }
 
 
