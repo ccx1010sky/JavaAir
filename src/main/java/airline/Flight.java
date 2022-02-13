@@ -5,19 +5,19 @@ import java.util.ArrayList;
 
 public class Flight {
     private Pilot pilot;
-    private Plane plane;
+//    private Plane plane;
     ArrayList<Pilot> pilots;
     ArrayList<CcMember> ccMembers;
     ArrayList<Passenger> passengers;
     private FlightInfo flightInfo;
     private PlaneType planeType;
 
-    public Flight( Pilot pilot,Plane plane,PlaneType planeType,FlightInfo flightInfo){
-        this.pilot = pilot;
+    public Flight( PlaneType planeType,FlightInfo flightInfo){
+//        this.pilot = pilot;
         this.planeType = planeType;
         this.flightInfo = flightInfo;
-        this.plane = plane;
-        pilots = new ArrayList<>();
+//        this.plane = plane;
+        pilots =  new ArrayList<>();
         ccMembers = new ArrayList<>();
         passengers = new ArrayList<>();
     }
@@ -30,7 +30,7 @@ public class Flight {
     }
 
     public int numberOfAvailableSeats(){
-        return this.plane.getPlaneCapacity() - this.passengers.size();
+        return this.planeType.getCapacity() - this.passengers.size();
     }
 
     public void addPilot(Pilot pilot){
@@ -52,9 +52,9 @@ public class Flight {
         return planeType;
     }
 
-    public Plane getPlane() {
-        return plane;
-    }
+//    public Plane getPlane() {
+//        return plane;
+//    }
 
     public void bookInPassenger(Passenger passenger){
         if (this.numberOfAvailableSeats() >0){
