@@ -1,6 +1,4 @@
 package airline;
-
-
 import passenger.Passenger;
 
 import java.util.ArrayList;
@@ -13,26 +11,18 @@ public class Flight {
     ArrayList<Passenger> passengers;
     private FlightInfo flightInfo;
     private PlaneType planeType;
-//    private String flightNumber;
-//    private String destination;
-//    private String departureAirport;
-//    private String departureTime;
 
     public Flight( Pilot pilot,PlaneType planeType,FlightInfo flightInfo){
         this.pilot = pilot;
         this.planeType = planeType;
         this.flightInfo = flightInfo;
-//        this.flightNumber = flightNumber;
-//        this.destination = destination;
-//        this.departureAirport = departureAirport;
-//        this.departureTime = departureTime;
         pilots = new ArrayList<>();
         ccMembers = new ArrayList<>();
         passengers = new ArrayList<>();
     }
 
     public int numberOfAvailableSeats(){
-        return this.plane.getPlaneCapacity() -  this.passengers.size();
+        return this.plane.getPlaneCapacity() - this.passengers.size();
     }
 
     public void addPilot(Pilot pilot){
