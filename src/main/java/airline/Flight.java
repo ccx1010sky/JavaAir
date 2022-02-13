@@ -4,8 +4,6 @@ import passenger.Passenger;
 import java.util.ArrayList;
 
 public class Flight {
-    private Pilot pilot;
-//    private Plane plane;
     ArrayList<Pilot> pilots;
     ArrayList<CcMember> ccMembers;
     ArrayList<Passenger> passengers;
@@ -13,10 +11,8 @@ public class Flight {
     private PlaneType planeType;
 
     public Flight( PlaneType planeType,FlightInfo flightInfo){
-//        this.pilot = pilot;
         this.planeType = planeType;
         this.flightInfo = flightInfo;
-//        this.plane = plane;
         pilots =  new ArrayList<>();
         ccMembers = new ArrayList<>();
         passengers = new ArrayList<>();
@@ -51,10 +47,6 @@ public class Flight {
     public PlaneType getPlaneType() {
         return planeType;
     }
-
-//    public Plane getPlane() {
-//        return plane;
-//    }
 
     public void bookInPassenger(Passenger passenger){
         if (this.numberOfAvailableSeats() >0){
