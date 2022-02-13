@@ -12,6 +12,6 @@ public class Pilot extends Employee {
     }
 
     public String flyPlane(){
-        return "I am fling the plane";
+        return "I am flying the plane";
     }
 }
