@@ -12,10 +12,11 @@ public class Flight {
     private FlightInfo flightInfo;
     private PlaneType planeType;
 
-    public Flight( Pilot pilot,PlaneType planeType,FlightInfo flightInfo){
+    public Flight( Pilot pilot,Plane plane,PlaneType planeType,FlightInfo flightInfo){
         this.pilot = pilot;
         this.planeType = planeType;
         this.flightInfo = flightInfo;
+        this.plane = plane;
         pilots = new ArrayList<>();
         ccMembers = new ArrayList<>();
         passengers = new ArrayList<>();
@@ -49,6 +50,10 @@ public class Flight {
 
     public PlaneType getPlaneType() {
         return planeType;
+    }
+
+    public Plane getPlane() {
+        return plane;
     }
 
     public void bookInPassenger(Passenger passenger){
