@@ -41,6 +41,14 @@ public class Flight {
         return passengers.size();
     }
 
+    public void bookInPassenger(Passenger passenger){
+        if (this.numberOfAvailableSeats() >0){
+        this.passengers.add(passenger);
+        }
+
+    }
+
+
 
 
 }
