@@ -43,6 +43,14 @@ public class Flight {
         return passengers.size();
     }
 
+    public FlightInfo getFlightInfo() {
+        return flightInfo;
+    }
+
+    public PlaneType getPlaneType() {
+        return planeType;
+    }
+
     public void bookInPassenger(Passenger passenger){
         if (this.numberOfAvailableSeats() >0){
         this.passengers.add(passenger);
