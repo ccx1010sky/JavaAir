@@ -10,4 +10,8 @@ public class Pilot extends Employee {
     public String getLicenceNumber() {
         return licenceNumber;
     }
+
+    public String flyPlane(){
+        return "I am fling the plane";
+    }
 }
