@@ -50,7 +50,13 @@ public class FlightTest {
         flight.addPassenger(passenger2);
         flight.addPassenger(passenger3);
         assertEquals(3,flight.getPassengerCount());
-
+    }
+    @Test
+    public void canGetNumberOfSeatsAvailable(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(247,flight.numberOfAvailableSeats());
 
     }
 
