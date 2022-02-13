@@ -59,5 +59,15 @@ public class FlightTest {
         assertEquals(247,flight.numberOfAvailableSeats());
 
     }
+    @Test
+    public void canClearPassenger(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        flight.clearPassenger();
+        assertEquals(0,flight.getPassengerCount());
+
+
+    }
 
 }
