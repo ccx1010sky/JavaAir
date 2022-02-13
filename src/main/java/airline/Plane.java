@@ -13,4 +13,8 @@ public class Plane {
     public void setPlaneType(PlaneType planeType) {
         this.planeType = planeType;
     }
+
+    public int  getPlaneCapacity(){
+        return this.planeType.getCapacity();
+    }
 }
